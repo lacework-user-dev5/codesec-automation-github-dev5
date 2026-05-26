@@ -1,0 +1,53 @@
+# ==========================
+# Mock requirements.txt for license violation testing
+# ==========================
+
+# --- Real restrictive licenses ---
+
+# LGPL-2.1 — weak copyleft
+paramiko==2.4.1
+
+# GPL-3.0 — strong copyleft
+matplotlib==3.1.0
+
+# GPL-3.0 — strong copyleft (medical imaging)
+pydicom==2.3.1
+
+# AGPL-3.0 — very restrictive, network copyleft
+django-redisboard==4.0.0
+
+# LGPL-3.0 — weak copyleft
+lxml==4.6.5
+
+# GPL-2.0-or-later — strong copyleft
+gobject==0.1.0
+
+# --- Dual-licensed examples (GPL or Commercial) ---
+
+pyqt5==5.15.2
+qscintilla==2.11.6
+pyinstaller==5.7.0
+
+# --- Deprecated / unmaintained (extra lifecycle risk) ---
+
+# GTK bindings, long deprecated, still under LGPL
+pygtk==2.24.0
+
+# --- Permissive licenses (safe, for contrast) ---
+
+requests==2.31.0         # Apache-2.0
+numpy==1.26.0            # MIT
+flask==2.3.2             # BSD-3-Clause
+pandas==2.1.1            # BSD-3-Clause
+
+# --- Edge / problematic cases ---
+
+# License marked as "UNKNOWN" in metadata
+python-utils==2.0.0
+
+# Fake proprietary entry (to simulate commercial-only license)
+fake-proprietary-lib==1.0.0
+
+# Fake academic-only entry
+academic-only-lib==0.9.0
+
